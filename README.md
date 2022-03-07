@@ -3,6 +3,8 @@
 Acordeon UTXJ
 
 Integrantes:
+Brenda Paola Flores Carcaño
+Angel Enrique Cruz Gonzalez
 Gilberto Rodríguez Ramírez 191004
 
 ## Tecnologías 
