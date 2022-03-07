@@ -1,6 +1,29 @@
 # AcordeonUTXJ
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+Acordeon UTXJ
+
+Integrantes:
+- Brenda Paola Flores Carcaño 
+- Angel Enrique Cruz Gonzalez 
+- Gilberto Rodríguez Ramírez 191004 
+
+## Tecnologías 
+
+-Angular
+-Bootstrap
+-NodeJS
+-MySQL
+-...
+
+## Descripción
+
+Este proyecto pretende ser un apoyo para alumnos de la universidad, sirviendo como un repositorio de recursos de apoyo para los distintos temas que se imparten en cada una de las materias de las carreras a lo largo de cada cuatrimestre.
+
+Se pretende filtrar los resultados por carrera, cuatrimestre, materia y al final eligiendo el tema.
+
+La idea base es que se muestren elementos como páginas web o videos que contengan información de apoyo y reforzamiento del tema seleccionado.
+
+
 
 ## Development server
 
