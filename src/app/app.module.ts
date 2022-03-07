@@ -6,6 +6,7 @@ import { FormularioComponent } from './components/formulario/formulario.componen
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { ListadoTemasComponent } from './components/listado-temas/listado-temas.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ListadoTemasComponent } from './components/listado-temas/listado-temas.
     ListadoTemasComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
