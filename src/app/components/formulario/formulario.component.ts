@@ -26,6 +26,7 @@ export class FormularioComponent implements OnInit {
     { value: 'tema1', nombre: 'Ejemplo de tema 1'},
     { value: 'tema2', nombre: 'Ejemplo de tema 2'},
     { value: 'tema3', nombre: 'Ejemplo de tema 3'},
+    { value: 'tema4', nombre: 'Ejemplo de tema 4'},
   ]
 
   constructor() { }
