@@ -3,9 +3,10 @@
 Acordeon UTXJ
 
 Integrantes:
-- Brenda Paola Flores Carcaño 
-- Angel Enrique Cruz Gonzalez 
+- Brenda Paola Flores Carcaño 190032
+- Angel Enrique Cruz Gonzalez 190040
 - Gilberto Rodríguez Ramírez 191004 
+- Jessica Castillo Paredes  190037
 
 ## Tecnologías 
 
