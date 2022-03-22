@@ -8,16 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class FormularioComponent implements OnInit {
 
   materiaSeleccionada = 'fdr';
-  carreraSeleccionada = 'tsudsm';
-  cuatrimestreSeleccionado = 1;
+  temaSeleccionado = '';
 
-  carreras: any[] = [
-    { value: 'tsudsm', nombre: 'TSU DSM'},
-    { value: 'idgs', nombre: 'IDGS'},
-    // { value: 'admon', nombre: 'Administración'}
-  ]
 
-  cuatrimestres: number[] = [ 1, 2, 3, 4, 5, 6 ,7, 8, 9, 10, 11 ]
 
   materias: any[] = [
     { value: 'eoe_1', nombre: 'Expresión Oral y Escrita'},
@@ -29,14 +22,19 @@ export class FormularioComponent implements OnInit {
 
   ]
 
+  temas: any[] = [
+    { value: 'tema1', nombre: 'Ejemplo de tema 1'},
+    { value: 'tema2', nombre: 'Ejemplo de tema 2'},
+    { value: 'tema3', nombre: 'Ejemplo de tema 3'},
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   buscarTema() {
-    console.log(this.carreraSeleccionada);
-    console.log(this.cuatrimestreSeleccionado);
+    console.log(this.temaSeleccionado);
     console.log(this.materiaSeleccionada);
   }
 
