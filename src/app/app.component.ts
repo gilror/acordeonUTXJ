@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  listTemas: any[] = [];
+
   title = 'acordeonUTXJ';
+
+
+  buscarTemas(parametros: any){
+    console.log('Soy el padre')
+    console.log(parametros)
+  }
+
+
 }
