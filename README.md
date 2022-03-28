@@ -24,6 +24,9 @@ Se pretende filtrar los resultados por carrera, cuatrimestre, materia y al final
 
 La idea base es que se muestren elementos como páginas web o videos que contengan información de apoyo y reforzamiento del tema seleccionado.
 
+##  Wireframes
+
+[![Whats-App-Image-2022-03-27-at-5-02-10-PM.jpg](https://i.postimg.cc/cLr6jb3N/Whats-App-Image-2022-03-27-at-5-02-10-PM.jpg)](https://postimg.cc/tsGXnDDr)
 
 
 ## Development server
