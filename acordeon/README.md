@@ -24,6 +24,27 @@ Se pretende filtrar los resultados por carrera, cuatrimestre, materia y al final
 
 La idea base es que se muestren elementos como páginas web o videos que contengan información de apoyo y reforzamiento del tema seleccionado.
 
+##  Wireframes
+Esta será la pantalla inicial que se mostrará, los estudiantes darán clic al botón de Alumno y los profesores al botón de docente.
+[![Whats-App-Image-2022-03-27-at-5-02-10-PM.jpg](https://i.postimg.cc/cLr6jb3N/Whats-App-Image-2022-03-27-at-5-02-10-PM.jpg)](https://postimg.cc/tsGXnDDr)
+
+Una vez que se haya dado clic al botón correspondiente, los alumnos tendrán vista de la siguiente pantalla, en donde podrán seleccionar la materia y el tema que deseen consultar: 
+[![Whats-App-Image-2022-03-27-at-5-08-51-PM.jpg](https://i.postimg.cc/BQy1q34v/Whats-App-Image-2022-03-27-at-5-08-51-PM.jpg)](https://postimg.cc/vcrmzp1R)
+
+El botón de docente va a direccionar a los profesores a una pantalla de login, aquí deberán ingresar su correo y contraseña para poder acceder a la siguiente pantalla:
+[![Whats-App-Image-2022-03-27-at-5-41-22-PM.jpg](https://i.postimg.cc/3RJwXfY6/Whats-App-Image-2022-03-27-at-5-41-22-PM.jpg)](https://postimg.cc/4KqZZ5Kb)
+
+Una vez realizado el logeo de manera exitosa, los profesores podrán comenzar a agregar, editar o eliminar temas de cada una de sus materias: 
+[![Whats-App-Image-2022-03-27-at-6-18-02-PM.jpg](https://i.postimg.cc/G34y69nf/Whats-App-Image-2022-03-27-at-6-18-02-PM.jpg)](https://postimg.cc/NLwFHsM8)
+
+Ya que se hayan agregado temas, los alumnos podrán ver el material proporcionado por los profesores, con el titulo y la materia correspondiente:
+[![Whats-App-Image-2022-03-27-at-5-08-57-PM.jpg](https://i.postimg.cc/gjsQv4cM/Whats-App-Image-2022-03-27-at-5-08-57-PM.jpg)](https://postimg.cc/wRtwzXmJ)
+
+Al dar clic en el tema de su agrado, el estudiante podrá ver toda la información compartida por su profesor(a): 
+[![Whats-App-Image-2022-03-27-at-5-09-04-PM.jpg](https://i.postimg.cc/SNjDTmgQ/Whats-App-Image-2022-03-27-at-5-09-04-PM.jpg)](https://postimg.cc/9r5dzH3s)
+
+Esas son las pantallas con las que contará este proyecto.
+
 
 
 ## Development server
