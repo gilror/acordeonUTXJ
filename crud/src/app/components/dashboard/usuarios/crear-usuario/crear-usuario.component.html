@@ -1,0 +1,58 @@
+<div class="container">
+  <mat-toolbar>
+    <span>Crear Usuario</span>
+  </mat-toolbar>
+  <mat-card style="margin-top: 10px;">
+    <form [formGroup]="form" (ngSubmit)="agregarUsuario()">
+      <mat-grid-list cols="4" rowHeight="70px">
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field class="ancho">
+            <mat-label>Titulo</mat-label>
+            <input matInput autocomplete="off" formControlName="usuario">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="3" [rowspan]="5">
+          <img src="./assets/img/batman.png" width="250" height="250">
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1" >
+          <mat-form-field class="ancho">
+            <mat-label>Descripción</mat-label>
+            <input matInput autocomplete="off" formControlName="nombre">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1" >
+          <mat-form-field class="ancho">
+            <mat-label>Materia</mat-label>
+            <input matInput autocomplete="off" formControlName="apellido">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field class="ancho">
+            <mat-label>URL</mat-label>
+            <mat-select formControlName="sexo">
+              <mat-option *ngFor="let item of sexo" [value]="item">
+                {{item}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1" >
+          <mat-form-field class="ancho">
+            <mat-label>Imagen</mat-label>
+            <input matInput autocomplete="off" formControlName="apellido">
+          </mat-form-field>
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <div class="example-spacer"></div>
+          <button mat-raised-button color="warn">Volver</button>
+          <div class="example-spacer"></div>
+          <button mat-raised-button color="primary" type="submit" [disabled]="form.invalid">Aceptar</button>
+          <div class="example-spacer"></div>
+
+        </mat-grid-tile>
+
+      </mat-grid-list>
+
+    </form>
+  </mat-card>
+</div>

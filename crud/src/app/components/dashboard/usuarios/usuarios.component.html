@@ -1,0 +1,69 @@
+<div class="container">
+  <mat-toolbar>
+    <span>Temas</span>
+    <div class="example-spacer"></div>
+    <button mat-raised-button style="background-color: #006bff; color: white;" routerLink="/dashboard/crear-usuario"><mat-icon>add</mat-icon>Agregar</button>
+
+  </mat-toolbar>
+  <div *ngIf="listUsuarios.length > 0">
+    <mat-form-field appearance="standard">
+      <mat-label>Filtrar</mat-label>
+      <input matInput (keyup)="applyFilter($event)" placeholder="Ej. ter" #input autocomplete="off">
+    </mat-form-field>
+   <div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort mat-table [dataSource]="dataSource">
+
+      <!-- Position Column -->
+      <ng-container matColumnDef="titulo" >
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="titulo"> Titulo </th>
+        <td mat-cell *matCellDef="let usuario"> {{usuario.usuario}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="descripcion">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="descripcion"> Descripción </th>
+        <td mat-cell *matCellDef="let usuario"> {{usuario.nombre}} </td>
+      </ng-container>
+
+      <!-- Weight Column -->
+      <ng-container matColumnDef="materia">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="materia"> Materia </th>
+        <td mat-cell *matCellDef="let usuario"> {{usuario.apellido}} </td>
+      </ng-container>
+
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="url">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="url"> URL </th>
+        <td mat-cell *matCellDef="let usuario"> {{usuario.sexo}} </td>
+      </ng-container>
+
+      <!-- Img Column -->
+      <ng-container matColumnDef="imagen">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header="imagen"> Imagen </th>
+        <td mat-cell *matCellDef="let usuario"> {{usuario.sexo}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="acciones">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let usuario; let i= index;" class="align-icons">
+          <a class="pointer" style="color: #75838b" matTooltip="Ver usuario">
+            <mat-icon>visibility</mat-icon>
+          </a>
+          <a class="pointer" style="color: #045e96" matTooltip="Editar usuario">
+            <mat-icon >edit</mat-icon>
+          </a>
+          <a class="pointer" (click)="eliminarUsuario(i)" style="color: #bd0d0d" matTooltip="Eliminar usuario">
+            <mat-icon>delete</mat-icon>
+          </a>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+   </div>
+  </div>
+  <h2 *ngIf="listUsuarios.length == 0">No hay usuarios para mostrar.</h2>
+
+</div>
